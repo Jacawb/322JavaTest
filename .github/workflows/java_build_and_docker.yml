@@ -27,7 +27,8 @@ jobs:
       - name: Build and Push Docker Image to Docker Hub
         uses: mr-smithers-excellent/docker-build-push@v4
         with:
-          image: jacawb/yourimage:latest
+          image: jacawb/java-app:latest
           registry: docker.io
-          username: ${{ secrets.jacawb }}
-          password: ${{ secrets.GolferJake2964$ }}
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+
